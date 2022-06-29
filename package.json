@@ -1,0 +1,25 @@
+{
+  "name": "cypress-training",
+  "version": "1.0.0",
+  "description": "This is a Workshop about Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandavid-0714/CypressGitDemo.git"
+  },
+  "keywords": [
+    "ui-testing",
+    "dojo",
+    "practice",
+    "cypress"
+  ],
+  "author": "Juan David juan.munozv@perficient.com juandavid-0714",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juandavid-0714/CypressGitDemo/issues"
+  },
+  "homepage": "https://github.com/juandavid-0714/CypressGitDemo#readme"
+}
