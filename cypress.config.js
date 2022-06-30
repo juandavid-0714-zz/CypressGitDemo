@@ -7,5 +7,7 @@ module.exports = defineConfig({
     },
   },
   video: false,
-  screenshotOnRunFailure: false
+  screenshotOnRunFailure: false,
+  defaultCommandTimeout: 20000,
+  responseTimeout: 20000
 });
