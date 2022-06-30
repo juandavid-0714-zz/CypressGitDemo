@@ -25,7 +25,7 @@ describe("Buy a t-shirt", () => {
     cy.get(".bankwire").click(); // Click Pay by bank wire
     cy.get("#cart_navigation > button > span").click(); // Click Confirm order
 
-    cy.get("#center_column > div > p > strong") // Verify that in final step title say "Your order on My Store is complete."
+    cy.get("#center_column > div > p > strong") // Verify that in final step say "Your order on My Store is complete."
         .should("have.text", "Your order on My Store is complete.");
   });
 });
