@@ -1,12 +1,12 @@
 class AddressStepPage {
-    private proceedToCheckout: string
+    private proceedCheckout: string
 
     constructor() {
-        this.proceedToCheckout = "[name=\"processAddress\"]"
+        this.proceedCheckout = "[name=\"processAddress\"]"
     }
 
-    public clickProceedToCheckout(): void {
-        cy.get(this.proceedToCheckout).click()
+    public proceedToCheckout(): void {
+        cy.get(this.proceedCheckout).click()
     }
 }
 

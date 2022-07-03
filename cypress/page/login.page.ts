@@ -9,9 +9,9 @@ class LoginPage {
         this.submit = "#SubmitLogin"
     }
 
-    public fillFieldsAndSubmit(): void {
-        cy.get(this.email).type("aperdomobo@gmail.com");
-        cy.get(this.password).type("WorkshopProtractor");
+    public login( userEmail: string, userPassword: string): void {
+        cy.get(this.email).type(userEmail);
+        cy.get(this.password).type(userPassword);
         cy.get(this.submit).click();
     }
 

@@ -1,18 +1,18 @@
 class ShippingStepPage {
     private acceptTerms: string;
-    private clickToProceed: string
+    private proceedToCheckoutButton: string
 
     constructor() {
-        this.acceptTerms = "div > span > input#cgv";
-        this.clickToProceed = "[name=\"processCarrier\"]"
+        this.acceptTerms = "#cgv";
+        this.proceedToCheckoutButton = "[name=\"processCarrier\"]"
     }
 
     public acceptTheTerms(): void {
         cy.get(this.acceptTerms).check()
     }
 
-    public clickProceed(): void {
-        cy.get(this.clickToProceed).click()
+    public proceedToCheckout(): void {
+        cy.get(this.proceedToCheckoutButton).click()
     }
 }
 

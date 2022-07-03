@@ -16,25 +16,25 @@ describe("Buy a t-shirt", () => {
     menuContentPage.goToTShirtMenu();
 
     // product list
-    productListPage.addCart();
-    productListPage.clickProceedToCheckout();
+    productListPage.addToCart();
+    productListPage.proceedToCheckout();
 
     // shopping
-    shoppingCartPage.clickProceedToCheckout();
+    shoppingCartPage.proceedToCheckout();
 
     // 02. Sign in
-    loginPage.fillFieldsAndSubmit();
+    loginPage.login("aperdomobo@gmail.com", "WorkshopProtractor");
 
     // 03. Address
-    addressStepPage.clickProceedToCheckout();
+    addressStepPage.proceedToCheckout();
 
     // 04. Shipping
     shippingStepPage.acceptTheTerms();
-    shippingStepPage.clickProceed();
+    shippingStepPage.proceedToCheckout();
 
     // 05. Payment
-    paymentStepPage.clickBanWire();
-    paymentStepPage.clickConfirmOrder();
+    paymentStepPage.selectBanWire();
+    paymentStepPage.confirmOrder();
     paymentStepPage.checkResult();
   });
 });
