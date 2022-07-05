@@ -33,8 +33,8 @@ describe("Buy a t-shirt", () => {
     shippingStepPage.proceedToCheckout();
 
     // 05. Payment
-    paymentStepPage.selectBanWire();
+    paymentStepPage.selectBankWire();
     paymentStepPage.confirmOrder();
-    paymentStepPage.getConfirmationMessage("Your order on My Store is complete.");
+    paymentStepPage.verifyConfirmationMessage("Your order on My Store is complete.");
   });
 });

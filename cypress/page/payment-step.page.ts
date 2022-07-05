@@ -9,7 +9,7 @@ class PaymentStepPage {
         this.storeIsCompleted = ".cheque-indent > .dark";
     }
 
-    public selectBanWire(): void {
+    public selectBankWire(): void {
         cy.get(this.bankWire).click()
     }
 
@@ -17,11 +17,8 @@ class PaymentStepPage {
         cy.get(this.confirmOrderButton).click()
     }
 
-    public getConfirmationMessage(message: string): void {
-        cy.get(this.storeIsCompleted).should(($mess) => {
-           expect($mess).to.have.text(message)
-        })
-          
+    public verifyConfirmationMessage(message: string): void {
+        cy.get(this.storeIsCompleted).should('have.text', message)   
     }
 
 }
