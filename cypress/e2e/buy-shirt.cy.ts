@@ -35,6 +35,6 @@ describe("Buy a t-shirt", () => {
     // 05. Payment
     paymentStepPage.selectBanWire();
     paymentStepPage.confirmOrder();
-    paymentStepPage.checkResult();
+    paymentStepPage.getConfirmationMessage("Your order on My Store is complete.");
   });
 });
