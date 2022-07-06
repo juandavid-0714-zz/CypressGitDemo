@@ -10,7 +10,7 @@ class ProductListPage {
     }
 
     public addToCart(productName: string): void {
-        this.findProductByName(productName).find('a > span').contains('Add to cart').click()
+        this.findProductByName(productName).find(this.addToCartBtn).click()
     }
 
     public proceedToCheckout(): void {
