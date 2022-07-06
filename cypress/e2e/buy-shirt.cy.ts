@@ -26,7 +26,7 @@ describe("Buy a t-shirt", () => {
     menuContentPage.goToTShirtMenu();
 
     // product list
-    productListPage.addToCart();
+    productListPage.addToCart("Faded Short Sleeve T-shirts");
     productListPage.proceedToCheckout();
 
     // shopping
