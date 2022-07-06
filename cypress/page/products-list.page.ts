@@ -4,7 +4,7 @@ class ProductListPage {
     private shirtItems: string
 
     constructor() {
-        this.addToCartBtn ="#center_column a.button.ajax_add_to_cart_button.btn.btn-default";
+        this.addToCartBtn ="a.button.ajax_add_to_cart_button.btn.btn-default";
         this.proceedToCheckoutBtn = "a[title='Proceed to checkout']"
         this.shirtItems = ".product-container"
     }
