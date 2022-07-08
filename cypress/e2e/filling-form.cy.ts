@@ -14,6 +14,7 @@ describe("Fill the form", () => {
       email: "hibarras@email.com",
       gender: "Male",
       mobileNumber: "3656589156",
+      dateOfBirth: "23 September,2010",
       hobbies: ["Music", "Reading"],
       currentAddress: "Av siempreViva # 123",
       state: "NCR",
