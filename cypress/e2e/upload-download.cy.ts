@@ -1,13 +1,13 @@
 import {UploadPage} from "../page/index";
 
-describe("Fill the form", () => {
+describe("Upload Files", () => {
   let uploadPage: UploadPage;
 
   before(() => {
     uploadPage = new UploadPage();
   });
 
-  it("Fill the form in tools QA Page", () => {
+  it("Uploading a file...", () => {
     uploadPage.visitUploadDemoSite();
     uploadPage.uploadFile("fileTest.PNG");
     uploadPage.verifyFileName("fileTest.PNG");
