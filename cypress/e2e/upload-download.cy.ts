@@ -18,7 +18,7 @@ describe("Uploading and downloading Files", () => {
   it("Downloading file...", () => {
     downloadPage.visitDownloadDemoSite();
     const content = "123456789";
-    const filePath = "cypress/downloads/info.txt"
+    const filePath = "cypress/downloads/info.txt";
     downloadPage.generateFile(content);
     downloadPage.downloadFile();
     downloadPage.verifyContent(content, filePath);
