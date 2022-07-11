@@ -17,10 +17,9 @@ describe("Uploading and downloading Files", () => {
 
   it.only("Downloading file...", () => {
     downloadPage.visitDownloadDemoSite();
-    const content = "123456789"
+    const content = "123456789";
     downloadPage.generateFile(content);
     downloadPage.downloadFile();
     downloadPage.verifyContent(content);
-  });  
-
+  });
 });
