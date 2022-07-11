@@ -15,7 +15,7 @@ describe("Uploading and downloading Files", () => {
     uploadPage.verifyFileName("fileTest.PNG");
   });
 
-  it.only("Downloading file...", () => {
+  it("Downloading file...", () => {
     downloadPage.visitDownloadDemoSite();
     const content = "123456789";
     downloadPage.generateFile(content);
