@@ -10,6 +10,7 @@ cypress/reports/*
 cypress/screenshots/*
 cypress/videos/*
 cypress/integration/examples/*
+cypress/downloads/*.txt
 
 ### Node ###
 # Logs
