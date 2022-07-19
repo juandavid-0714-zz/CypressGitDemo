@@ -3,7 +3,6 @@ import {IframePage} from "../page/index";
 describe("Working with Iframe", () => {
   let iframePage: IframePage;
   const htmlText = "HTML Tutorial";
-  const cssText = "CSS";
   beforeEach(() => {
     iframePage = new IframePage();
   });
@@ -11,6 +10,6 @@ describe("Working with Iframe", () => {
   it("Iframe page", () => {
     iframePage.visit();
     iframePage.getFrameTitle(htmlText);
-    iframePage.goToCssPageInFrame(cssText);
+    iframePage.goToCssPageInFrame();
   });
 });
