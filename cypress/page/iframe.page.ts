@@ -7,8 +7,8 @@ class IframePage {
     
     constructor() {
       this.iFrameSite = "https://www.w3schools.com/html/html_iframe.asp";
-      this.iFrameSelector = "iframe[title*='Schools']";
-      this.cssSelector = "a[title^='CSS']"
+      this.iFrameSelector = "[title='W3Schools HTML Tutorial']";
+      this.cssSelector = "[title='CSS Tutorial']"
     }
   
     public visit(): void {
