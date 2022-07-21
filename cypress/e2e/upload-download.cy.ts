@@ -11,16 +11,16 @@ describe("Uploading and downloading Files", () => {
 
   it("Uploading a file...", () => {
     uploadPage.visitUploadDemoSite();
-    uploadPage.uploadFile("fileTest.PNG");
+    uploadPage.chooseFile("fileTest.PNG");
+    uploadPage.uploadFile();
     uploadPage.verifyFileName("fileTest.PNG");
   });
 
   it("Downloading file...", () => {
     downloadPage.visitDownloadDemoSite();
-    const content = "123456789";
-    const filePath = "cypress/downloads/info.txt";
-    downloadPage.generateFile(content);
+    const fileName = "sampleFile.jpeg";
     downloadPage.downloadFile();
-    downloadPage.verifyContent(content, filePath);
+    const filePath = `cypress/downloads/${fileName}`;
+    downloadPage.verifyContent(filePath);
   });
 });
