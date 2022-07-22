@@ -3,13 +3,11 @@ class IframePage {
     private iFrameSite: string;
     private iFrameSelector: string;
     private cssSelector: string;
-    private selectorH1: string;
     
     constructor() {
       this.iFrameSite = "https://www.w3schools.com/html/html_iframe.asp";
       this.iFrameSelector = "[title='W3Schools HTML Tutorial']";
       this.cssSelector = "[title='CSS Tutorial']"
-      this.selectorH1 = "//h1"
     }
   
     public visit(): void {
