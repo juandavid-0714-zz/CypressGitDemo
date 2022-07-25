@@ -10,12 +10,11 @@ describe("Working with Iframe", () => {
   });
 
   it("Iframe HTML page", () => {
-    iframePage.getFrameTitleHTML().should("have.text", htmlText);
+    iframePage.getFrameTitle().should("have.text", htmlText);
   });
 
-  it.only("Iframe CSS page", () => {
+  it("Iframe CSS page", () => {
     iframePage.goToCssPageInFrame();
-    // cy.wait(1000);
-    iframePage.getFrameTitleCSS().should("have.text", cssText);
+    iframePage.getFrameTitle().should("have.text", cssText);
   });
 });
